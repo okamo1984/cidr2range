@@ -31,7 +31,7 @@ function cli() {
     if (!cidr) {
       printHelp();
     }
-    console.log(cidr2range(cidr));
+    console.log(cidr2range(cidr).join("\n"));
   } else if (command == "range2cidr") {
     const range = args.range;
     if (!range) {
